@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/tic-tac-toe.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+<body>
+
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-xs-12 score" id="score" style="visibility: hidden">
+            <div class="col-xs-6 " id="playerX">X :</div>
+            <div class="col-xs-6 " id="playerO">O :</div>
+        </div>
+
+    </div>
+    <div id="background" class="center-block">
+        <div id="gameSettings" class="center-block w3-container w3-center w3-animate-opacity">
+            <div id="playersText" class="text-center"></div>
+            <div class="row">
+                <div class="col-xs-4 options" id="optionOne"></div>
+                <div class="col-xs-4 options" id="optionTwo" onclick="twoPlayers()"></div>
+                <div class="col-xs-4 options" id="back"><= Back</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="gameOver" class="text-center"></div>
+<button id="playAgain" style="visibility: hidden" onclick="game()">Play Again!</button>
+<!-- JS -->
+
+<script src="js/preparations.js"></script>
+<script src="js/one-player.js"></script>
+<script src="js/game.js"></script>
+<script src="js/table.js"></script>
+
+</body>
+</html>

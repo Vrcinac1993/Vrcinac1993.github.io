@@ -1,0 +1,103 @@
+#background {
+    width: 450px;
+    height: 500px;
+    background-color: black;
+    margin-top: 200px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 5px #888888;
+
+}
+
+#playersText{
+    margin-top: 60px;
+    color: white;
+    font-size: 35px;
+    font-family: "Adobe Gothic Std B";
+    font-style: oblique;
+}
+
+#gameSettings {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 30px;
+    width: 20%;
+    height: 50%;
+    background-color: saddlebrown;
+    display: inline-block;
+
+}
+
+.options {
+    margin-top: 60px;
+    margin-left: 50px;
+    color: white;
+    font-size: 25px;
+    font-family: "Adobe Gothic Std B";
+    font-style: oblique;
+
+}
+
+#back {
+    visibility: hidden;
+    margin-left: 130px;
+}
+
+.options:hover {
+    border: ridge;
+}
+
+.tds {
+    font-size: 35px;
+    color: white;
+}
+
+#gameOver {
+    font-size: 55px;
+    color: darkred;
+    font-family: "Bell MT";
+    font-style: oblique;
+}
+
+
+
+#score {
+    box-shadow: 2px 2px 2px 2px black;
+    border-radius: 10px;
+    color: white;
+    margin-left: 760px;
+    background-color: darkblue;
+    width: 400px;
+    height: 50px;
+    font-size: 20px;
+    font-family: "Britannic Bold";
+    font-style: oblique;
+    top:200px;
+}
+
+#player2 {
+    text-align: right;
+}
+
+#playAgain {
+    margin-left: 45%;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: red;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+#playAgain:hover {background-color: darkred}
+
+#playAgain:active {
+    background-color: darkred;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
