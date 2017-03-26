@@ -1,5 +1,5 @@
 
-var table = document.createElement("table");
+var table = document.createElement("div");
 
 table.id = "table";
 table.style.visibility = "hidden";
@@ -7,24 +7,24 @@ table.style.marginLeft = "12px";
 table.style.width = "95%";
 table.style.height = "95%";
 table.style.border = "1px solid white";
-table.style.tableLayout = "fixed";
+
 
 
 table.setAttribute("border", "1");
 table.setAttribute("border-color", "white");
 
-table.className += "table-condensed";
-table.classname += "myTable";
+table.className += "myTable";
 
-var tbody = document.createElement("tbody");
+var tbody = document.createElement("div");
+tbody.style.height = '100%';
 var tmp = "";
 
 for (var i = 0; i < 3; i++) {
-    tmp += "<tr>";
+    tmp += "<div class=\"row rows\">";
     for (var j = 0; j < 3; j++) {
-        tmp += "<td class=\"tds text-center\" id=\"" + i + j + "\" onclick=\"writeSign()\"></td>";
+        tmp += "<div class=\"col-md-4 tds text-center\" id=\"" + i + j + "\" onclick=\"writeSign()\"></div>";
     }
-    tmp += "</tr>";
+    tmp += "</div>";
 }
 
 tbody.innerHTML = tmp;

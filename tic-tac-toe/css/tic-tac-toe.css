@@ -37,6 +37,10 @@
 
 }
 
+.myTable {
+    border: none !important;
+}
+
 #back {
     visibility: hidden;
     margin-left: 130px;
@@ -46,9 +50,33 @@
     border: ridge;
 }
 
+.rows {
+    height: 33.33%;
+    border-bottom: 1px solid white;
+}
+
+.rows:nth-child(3){
+    border: none;
+}
+
 .tds {
     font-size: 35px;
     color: white;
+    line-height: 157px;
+    border-right: 1px solid white;
+
+    height: 100%;
+    min-height: 100% !important;
+    max-height: 100%;
+
+    width: 33.33%;
+    min-width: 33.33% !important;
+    max-width: 33.33%;
+
+}
+
+.tds:nth-child(3) {
+    border-right: none;
 }
 
 #gameOver {
